@@ -13,10 +13,10 @@ beforeEach(() => {
 test("should add a user into the database", async () => {
     const res = await request(server).post("/api/auth/register").send({
         username: "brittany",
-        password: "brittqny",
+        password: "brittany",
       });
        expect(res.status).toBe(200)
-       expect(res.body.data.username).toBe('brittqny')
+       expect(res.body.data.username).toBe('brittany')
        expect(res.body.data.id).toBe(3)
   });
 
